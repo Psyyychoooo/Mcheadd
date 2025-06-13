@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>McHEAD - Catálogo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2c2c2c;
+      color: white;
+      padding: 1em;
+      text-align: center;
+      position: relative;
+    }
+    .logo-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+    }
+    .producto {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 1em;
+      padding: 1em;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .producto:hover {
+      transform: scale(1.03);
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .producto h2 {
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .redes {
+      text-align: center;
+      margin: 2em 0;
+    }
+    .redes a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-tiktok {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn-instagram {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .stock {
+      font-weight: bold;
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>McHEAD</h1>
+    <p>Catálogo de Gorras</p>
+    <img class="logo-icon" src="https://i.imgur.com/7D7I6dI.png" alt="Logo McHEAD" />
+  </header>
+  <section class="catalogo">
+    <div class="producto">
+      <img src="https://scontent-qro1-2.xx.fbcdn.net/v/t1.15752-9/495075906_1085825103440390_1105232790085499095_n.jpg" alt="Gorra A diseño de llama" />
+      <h2>Gorra A diseño de llama</h2>
+      <p>Precio: $300.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-tiktok" href="https://www.tiktok.com/@mcheadoficial" target="_blank">Contáctame por TikTok</a>
+      <a class="btn-instagram" href="https://www.instagram.com/mcheadoficial/" target="_blank">Contáctame por Instagram</a>
+    </div>
+    <div class="producto">
+      <img src="https://scontent-qro1-2.xx.fbcdn.net/v/t1.15752-9/504660835_1062546989163901_8158033654191523656_n.jpg" alt="Gorra LA con rosa roja" />
+      <h2>Gorra LA con rosa roja</h2>
+      <p>Precio: $300.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-tiktok" href="https://www.tiktok.com/@mcheadoficial" target="_blank">Contáctame por TikTok</a>
+      <a class="btn-instagram" href="https://www.instagram.com/mcheadoficial/" target="_blank">Contáctame por Instagram</a>
+    </div>
+    <div class="producto">
+      <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.15752-9/495076881_1253353246299130_1312755375538108258_n.jpg" alt="Gorra de cartas" />
+      <h2>Gorra de cartas</h2>
+      <p>Precio: $300.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-tiktok" href="https://www.tiktok.com/@mcheadoficial" target="_blank">Contáctame por TikTok</a>
+      <a class="btn-instagram" href="https://www.instagram.com/mcheadoficial/" target="_blank">Contáctame por Instagram</a>
+    </div>
+    <div class="producto">
+      <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.15752-9/495076961_687544070724378_2572611891299692519_n.jpg" alt="Gorra A diseño llama con visera plana" />
+      <h2>Gorra A diseño llama con visera plana</h2>
+      <p>Precio: $300.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-tiktok" href="https://www.tiktok.com/@mcheadoficial" target="_blank">Contáctame por TikTok</a>
+      <a class="btn-instagram" href="https://www.instagram.com/mcheadoficial/" target="_blank">Contáctame por Instagram</a>
+    </div>
+  </section>
+  <section class="redes">
+    <h3>Síguenos en redes sociales:</h3>
+    <p>
+      <a href="https://www.instagram.com/mcheadoficial" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@mcheadoficial" target="_blank">TikTok</a>
+    </p>
+  </section>
+  <footer>
+    <p>Contáctanos en: mcheadmx@gmail.com</p>
+  </footer>
+</body>
+</html>
