@@ -346,4 +346,18 @@
 
     function enviarPedidoTikTok() {
       if(carrito.length === 0){
-       
+        alert("El carrito está vacío");
+        return;
+      }
+      let mensaje = encodeURIComponent("Hola!, quisiera hacer un pedido de:\n\n" +
+        carrito.map(item => `${item.nombre} - $${item.precio.toFixed(2)}`).join('\n') +
+        `\n\nTotal: $${carrito.reduce((sum, item) => sum + item.precio, 0).toFixed(2)}`);
+
+      const urlTikTok = "https://www.tiktok.com/messages";
+      alert("Se abrirá TikTok. Por favor pega el siguiente mensaje para hacer tu pedido:\n\n" + decodeURIComponent(mensaje));
+      window.open(urlTikTok, "_blank");
+    }
+  </script>
+
+</body>
+</html>
