@@ -339,8 +339,6 @@
         carrito.map(item => `${item.nombre} - $${item.precio.toFixed(2)}`).join('\n') +
         `\n\nTotal: $${carrito.reduce((sum, item) => sum + item.precio, 0).toFixed(2)}`);
 
-      // Instagram no tiene URL directa para enviar mensaje, se abre el perfil
-      // El usuario debe enviar mensaje manualmente
       const urlInstagram = "https://www.instagram.com/direct/inbox/";
       alert("Se abrirá Instagram. Por favor pega el siguiente mensaje para hacer tu pedido:\n\n" + decodeURIComponent(mensaje));
       window.open(urlInstagram, "_blank");
@@ -348,13 +346,4 @@
 
     function enviarPedidoTikTok() {
       if(carrito.length === 0){
-        alert("El carrito está vacío");
-        return;
-      }
-      let mensaje = encodeURIComponent("Hola!, quisiera hacer un pedido de:\n\n" +
-        carrito.map(item => `${item.nombre} - $${item.precio.toFixed(2)}`).join('\n') +
-        `\n\nTotal: $${carrito.reduce((sum, item) => sum + item.precio, 0).toFixed(2)}`);
-
-      // TikTok tampoco tiene URL para mensajes directos, se abre perfil para que el usuario mande el mensaje
-      const urlTikTok = "https://www.tiktok.com/@mcheadoficial";
-      alert("Se abrirá TikTok. Por favor pega el
+       
